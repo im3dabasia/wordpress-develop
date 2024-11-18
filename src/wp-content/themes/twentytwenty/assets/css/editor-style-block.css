@@ -93,7 +93,7 @@
 .editor-styles-wrapper ul,
 .editor-styles-wrapper dl,
 .editor-styles-wrapper dt {
-	font-family: NonBreakingSpaceOverride, "Hoefler Text", "Noto Serif", Garamond, "Times New Roman", serif;
+	font-family: inherit;
 	letter-spacing: normal;
 }
 
