@@ -1283,9 +1283,9 @@ function delete_option( $option ) {
  * @since 6.6.0
  * @access private
  *
- * @param string $option          The name of the option.
- * @param mixed $value            The value of the option to check its autoload value.
- * @param mixed $serialized_value The serialized value of the option to check its autoload value.
+ * @param string    $option          The name of the option.
+ * @param mixed     $value            The value of the option to check its autoload value.
+ * @param mixed     $serialized_value The serialized value of the option to check its autoload value.
  * @param bool|null $autoload     The autoload value to check.
  *                                Accepts 'on'|true to enable or 'off'|false to disable, or
  *                                'auto-on', 'auto-off', or 'auto' for internal purposes.
@@ -1972,9 +1972,9 @@ function update_site_option( $option, $value ) {
  *
  * @global wpdb $wpdb WordPress database abstraction object.
  *
- * @param int    $network_id    ID of the network. Can be null to default to the current network ID.
- * @param string $option        Name of the option to retrieve. Expected to not be SQL-escaped.
- * @param mixed  $default_value Optional. Value to return if the option doesn't exist. Default false.
+ * @param int|null $network_id    ID of the network. Can be null to default to the current network ID.
+ * @param string   $option        Name of the option to retrieve. Expected to not be SQL-escaped.
+ * @param mixed    $default_value Optional. Value to return if the option doesn't exist. Default false.
  * @return mixed Value set for the option.
  */
 function get_network_option( $network_id, $option, $default_value = false ) {
@@ -2233,8 +2233,8 @@ function add_network_option( $network_id, $option, $value ) {
  *
  * @global wpdb $wpdb WordPress database abstraction object.
  *
- * @param int    $network_id ID of the network. Can be null to default to the current network ID.
- * @param string $option     Name of the option to delete. Expected to not be SQL-escaped.
+ * @param int|null $network_id ID of the network. Can be null to default to the current network ID.
+ * @param string   $option     Name of the option to delete. Expected to not be SQL-escaped.
  * @return bool True if the option was deleted, false otherwise.
  */
 function delete_network_option( $network_id, $option ) {
@@ -2337,9 +2337,9 @@ function delete_network_option( $network_id, $option ) {
  *
  * @global wpdb $wpdb WordPress database abstraction object.
  *
- * @param int    $network_id ID of the network. Can be null to default to the current network ID.
- * @param string $option     Name of the option. Expected to not be SQL-escaped.
- * @param mixed  $value      Option value. Expected to not be SQL-escaped.
+ * @param int|null $network_id ID of the network. Can be null to default to the current network ID.
+ * @param string   $option     Name of the option. Expected to not be SQL-escaped.
+ * @param mixed    $value      Option value. Expected to not be SQL-escaped.
  * @return bool True if the value was updated, false otherwise.
  */
 function update_network_option( $network_id, $option, $value ) {
