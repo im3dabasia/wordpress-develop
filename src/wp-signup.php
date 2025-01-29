@@ -131,7 +131,7 @@ function show_blog_form( $blogname = '', $blog_title = '', $errors = '' ) {
 	$errmsg_blogname_aria = '';
 	if ( $errmsg_blogname ) {
 		$errmsg_blogname_aria = 'wp-signup-blogname-error ';
-		echo '<p class="notice notice-error" id="wp-signup-blogname-error">' . $errmsg_blogname . '</p>';
+		echo '<p class="error" id="wp-signup-blogname-error">' . $errmsg_blogname . '</p>';
 	}
 
 	if ( ! is_subdomain_install() ) {
